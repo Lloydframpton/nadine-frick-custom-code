@@ -1,26 +1,32 @@
 <style>
 /* Carousel Code */
-.carousel-section {
+.carousel_section {
   overflow: hidden;
   padding: 2.5rem 0;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
   mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
 }
 
-.carousel-track {
+.carousel_wrap {
   display: flex;
   width: max-content;
   animation: carousel-scroll 20s linear infinite;
   will-change: transform;
 }
 
-.carousel-track.paused {
+.carousel_wrap.paused {
   animation-play-state: paused;
 }
 
 @keyframes carousel-scroll {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
 .logo-item {
@@ -31,19 +37,15 @@
   flex-shrink: 0;
 }
 
-.logo-item img {
-  height: 28px;
+.client_logo {
+  height: 36px;
   width: auto;
   filter: grayscale(100%) opacity(0.45);
   transition: filter 0.35s ease, transform 0.25s ease;
 }
 
-.logo-item:hover img {
+.logo-item:hover .client_logo {
   filter: grayscale(0%) opacity(1);
   transform: scale(1.08);
-}
-
-.w-webflow-badge {
-  display: none !important;
 }
 </style>

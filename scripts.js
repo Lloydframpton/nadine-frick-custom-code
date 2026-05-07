@@ -2,17 +2,16 @@
   // ---- Carousel Code
 window.addEventListener('load', function() {
   setTimeout(function() {
-    const track = document.querySelector('.carousel-track');
-
-    const items = Array.from(track.children);
+    const wrap = document.querySelector('.carousel_wrap');
+    const items = Array.from(wrap.children);
     items.forEach(item => {
       const clone = item.cloneNode(true);
       clone.setAttribute('aria-hidden', 'true');
-      track.appendChild(clone);
+      wrap.appendChild(clone);
     });
 
-    track.addEventListener('mouseenter', () => track.classList.add('paused'));
-    track.addEventListener('mouseleave', () => track.classList.remove('paused'));
+    wrap.addEventListener('mouseenter', () => wrap.classList.add('paused'));
+    wrap.addEventListener('mouseleave', () => wrap.classList.remove('paused'));
   }, 500);
 });
 </script>

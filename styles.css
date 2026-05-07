@@ -1,0 +1,45 @@
+<style>
+/* Carousel Code */
+.carousel-section {
+  overflow: hidden;
+  padding: 2.5rem 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: carousel-scroll 30s linear infinite;
+  will-change: transform;
+}
+
+.carousel-track.paused {
+  animation-play-state: paused;
+}
+
+@keyframes carousel-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  flex-shrink: 0;
+}
+
+.logo-item img {
+  height: 36px;
+  width: auto;
+  filter: grayscale(100%) opacity(0.45);
+  transition: filter 0.35s ease, transform 0.25s ease;
+}
+
+.logo-item:hover img {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.08);
+}
+</style>

@@ -42,4 +42,8 @@
   filter: grayscale(0%) opacity(1);
   transform: scale(1.08);
 }
+
+.w-webflow-badge {
+  display: none !important;
+}
 </style>

@@ -10,7 +10,7 @@
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: carousel-scroll 25s linear infinite;
+  animation: carousel-scroll 20s linear infinite;
   will-change: transform;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .logo-item img {
-  height: 36px;
+  height: 28px;
   width: auto;
   filter: grayscale(100%) opacity(0.45);
   transition: filter 0.35s ease, transform 0.25s ease;

@@ -10,7 +10,7 @@
 .carousel_wrap {
   display: flex;
   width: max-content;
-  animation: carousel-scroll 20s linear infinite;
+  animation: carousel-scroll 25s linear infinite;
   will-change: transform;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .client_logo {
-  height: 36px;
+  height: 25px;
   width: auto;
   filter: grayscale(100%) opacity(0.45);
   transition: filter 0.35s ease, transform 0.25s ease;

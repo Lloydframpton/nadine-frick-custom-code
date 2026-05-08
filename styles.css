@@ -1,4 +1,7 @@
 <style>
+.w-webflow-badge {
+  display: none !important;
+}
 /* Carousel Code */
 .carousel_section {
   overflow: hidden;
